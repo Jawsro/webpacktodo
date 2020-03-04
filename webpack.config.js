@@ -20,6 +20,10 @@ const config={
                 loader:'vue-loader'
             },
             {
+                test:/\.jsx$/,
+                loader:'babel-loader'
+            },
+            {
                 test: /\.css$/,
                 use: [
                     'vue-style-loader',
@@ -45,6 +49,12 @@ const config={
                 use: [
                     'vue-style-loader',
                     'css-loader',
+                    {//提高效率
+                        loader:'postcss-loader',
+                        options:{
+                            sourceMap:true
+                        }
+                    },
                     'stylus-loader'
                 ]
             },
