@@ -1,9 +1,8 @@
 # webpacktodo
-https://github.com/Jawsro/webpacktodo.git
-用webpack打包vue项目的demo
-问题1：
+#用webpack打包vue项目的demo
+#问题1：
 安装npm时，报错rollbackFailedOptional: verb npm-session的解决办法
-解决：
+#解决：
 先执行npm config set registry http://registry.npm.taobao.org(淘宝镜像)
 再执行安装命令
 安装的依赖包
@@ -25,11 +24,11 @@ npm i babel-preset-env babel-plugin-transform-vue-jsx
 
 npm i  babel-helper-vue-jsx-merge-props babel-plugin-syntax-jsx
 
-问题2：
+#问题2：
 Module Error (from ./node_modules/vue-loader/lib/index.js):
 vue-loader was used without the corresponding plugin. Make sure to include VueLoaderPlugin in your webpack config.
 
-解决：
+#解决：
 webpack.config.js里面添加：
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports={
@@ -39,3 +38,14 @@ module.exports={
 }
 
 footer 使用了jsx, jsx在JS中写HTML，可以进行任意js计算，更开放。 vue结构更清晰。
+
+#安装打包工具
+把非javescript的代码打包成静态资源，可以单独做浏览器缓存
+extract-text-webpack-plugin 已经被弃用改用:mini-css-extract-plugin
+
+npm install --save-dev mini-css-extract-plugin
+
+webpack.config.js里面添加：
+
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+

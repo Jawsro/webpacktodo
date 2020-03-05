@@ -1,0 +1,176 @@
+.header[data-v-c0890b2e] {
+  text-align: center;
+}
+.header h1[data-v-c0890b2e] {
+  font-size: 100px;
+  color: rgba(175,47,47,0.4);
+  font-weight: 100;
+  margin: 20px;
+}
+
+#footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #bfbfbf;
+  font-size: 10px;
+  text-shadow: 0 1px 0 #bfbfbf;
+}
+
+.todo-item[data-v-d1cb9e90] {
+  position: relative;
+  background-color: #fff;
+  font-size: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.todo-item:hover .destory[data-v-d1cb9e90]:after {
+  content: 'x';
+}
+.todo-item label[data-v-d1cb9e90] {
+  white-space: pre-line;
+  word-break: break-all;
+  padding: 15px 60px 15px 15px;
+  margin-left: 45px;
+  display: block;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+.todo-item.completed label[data-v-d1cb9e90] {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+.todo-item .input[data-v-d1cb9e90] {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+.todo-item .input[data-v-d1cb9e90]:after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iLTEwIC0xOCAxMDAgMTM1Ij48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZWRlZGVkIiBzdHJva2Utd2lkdGg9IjMiLz48L3N2Zz4=);
+}
+.todo-item .input[data-v-d1cb9e90]:checked:after {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iLTEwIC0xOCAxMDAgMTM1Ij48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmRkYWQ1IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBmaWxsPSIjNWRjMmFmIiBkPSJNNzIgMjVMNDIgNzEgMjcgNTZsLTQgNCAyMCAyMCAzNC01MnoiLz48L3N2Zz4=);
+}
+.todo-item .destory[data-v-d1cb9e90] {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+#helper[data-v-47457e64] {
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  line-height: 30px;
+  background-color: #fff;
+  font-size: 14px;
+  font-smoothing: antialiased;
+}
+#helper .left[data-v-47457e64] {
+  text-align: left;
+  width: 150px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+#helper .clear[data-v-47457e64] {
+  text-align: right;
+  padding: 0 10px;
+  width: 150px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#helper .tabs[data-v-47457e64] {
+  width: 200px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+#helper .tabs *[data-v-47457e64] {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+  border: 1px solid rgba(175,47,47,0);
+}
+#helper .tabs *.actived[data-v-47457e64] {
+  border-color: rgba(175,47,47,0.4);
+  border-radius: 5px;
+}
+
+.todo[data-v-ae2b3e80] {
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #666;
+}
+.todo .input[data-v-ae2b3e80] {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  border: none;
+  outline: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  padding: 16px 16px 16px 60px;
+  box-shadow: inset 0 -1px 5px 0 rgba(0,0,0,0.03);
+}
+
+#app[data-v-751cd52a] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#app #cover[data-v-751cd52a] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./6.jpg);
+  background-size: cover;
+  background-position: 100%;
+  font: 14px 'microsoft yahei';
+  color: #4d4d4d;
+  font-weight: 300;
+}
+

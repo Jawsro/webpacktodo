@@ -19,7 +19,7 @@
     },
     methods:{
       deleteTodo(){
-
+        this.$emit("del",this.todo.id)
       }
     }
   }
@@ -31,20 +31,20 @@
   font-size 24px
   border-bottom 1px solid rgba(0,0,0,0.06)
   &:hover
-      .destory:after
-          content 'x'            
+    .destory:after
+      content 'x'            
   label
-      white-space pre-line
-      word-break break-all
-      padding 15px 60px 15px 15px
-      margin-left 45px
-      display block
-      line-height 1.2
-      transition color 0.4s
-      &.completed
-          label
-              color #d9d9d9
-              text-decoration line-through
+    white-space pre-line
+    word-break break-all
+    padding 15px 60px 15px 15px
+    margin-left 45px
+    display block
+    line-height 1.2
+    transition color 0.4s
+  &.completed
+    label
+      color #d9d9d9
+      text-decoration line-through
   .input
     text-align: center;
     width: 40px;
@@ -57,9 +57,9 @@
     appearance: none;
     outline none
     &:after
-      content url("../assets/image/5.png")
+      content url("../assets/image/5.svg")
     &:checked:after
-      content url("../assets/image/5.jpg")
+      content url("../assets/image/6.svg")
   .destory
     position absolute
     top 0
